@@ -25,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
                 String loginStatus=sharedPreferences.getString("loginStatus","");
                 if (loginStatus.equals("true"))
                 {
-                    Intent intent=new Intent(SplashActivity.this,WebActivity.class);
+                    Intent intent=new Intent(SplashActivity.this,ShareMediaActivity.class);
                     startActivity(intent);
                 }else{
                     Intent intent=new Intent(SplashActivity.this,LoginActivity.class);
